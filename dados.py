@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 def main():
 
     print("--------- Analisador de Notas ---------")
     print(" ")
 
     lista_alunos = []
+=======
+print("--------- Analisador de Notas ---------")
+print(" ")
+>>>>>>> Stashed changes
 
     while True:
         nome = input("Informe o nome do aluno (ou 'sair' para encerrar): ")
