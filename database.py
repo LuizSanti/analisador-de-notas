@@ -22,7 +22,7 @@ def cadastrar_aluno(nome, n1, n2, media, status):
 
 def listar_alunos():
     conn = sqlite3.connect('alunos.db')
-    lista_alunos = conn.execute("SELECT nome, matricula, n1, n2, media, status from alunos")
-    dados = lista_alunos.fetchall()
+    cursor = conn.execute("SELECT nome, matricula, n1, n2, media, status FROM alunos")
+    dados = cursor.fetchall()
     conn.close()
     return dados
